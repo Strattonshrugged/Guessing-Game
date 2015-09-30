@@ -16,3 +16,4 @@ alert('Your answer to question 3 was ' + question3);
 alert('So to summarize I like chocolate and dogs but hate biking');
 
 var answersRight = 0
+// just changing this to see git change
