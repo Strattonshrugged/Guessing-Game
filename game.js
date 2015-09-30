@@ -8,7 +8,7 @@ var answer1 = prompt("Do I like chocolate?");
 		console.log('answer1 exact input: ' + answer1);
 		console.log('answer1 Upper Case: ' + answer1.toUpperCase());
 
-if (answer1.toUpperCase() === 'YES' || 'Y')	{
+if ((answer1.toUpperCase() === 'YES') || (answer1.toUpperCase() === 'Y'))	{
 	alert("Congratulations, that's correct!");
 	answersRight++;
 }	else	{
@@ -20,7 +20,7 @@ var answer2 = prompt("Do I like dogs?");
 		console.log('answer2 exact input: ' + answer2);
 		console.log('answer2 Upper Case: ' + answer2.toUpperCase());
 
-if (answer2.toUpperCase() === 'YES' || 'Y')	{
+if ((answer2.toUpperCase() === 'YES') || (answer2.toUpperCase() === 'Y'))	{
 	alert("Right! Dogs are awesome! And cats are ... tolerable.");
 	answersRight++;
 }	else	{
@@ -32,12 +32,17 @@ var answer3 = prompt("Do I enjoy biking?");
 		console.log('answer3 exact input: ' + answer3);
 		console.log('answer3 Upper Case: ' + answer3.toUpperCase());
 
-if (answer3.toUpperCase() === 'NO' || 'N')	{
-	alert("No! The last bike I rode was stationary and I still crashed it!");
+if ((answer3.toUpperCase() === 'NO') || (answer3.toUpperCase() === 'N'))	{
+	alert("Correct! The last bike I rode was stationary and I still crashed it!");
 	answersRight++;
 }	else	{
-	alert("Very good, why carry my body weight on my scrotum when I can enjoy a quick stroll.");
+	alert("Sorry, I hate biking.");
 }
 
-document.write(answersRight);
+alert("You scored " + answersRight + " out of 3. Thank you for playing!");
 
+// part of troubleshooting before I knew to divide the "if" conditions
+console.log('Correct Answers: ' + answersRight);
+console.log('answer1 = ' + answer1);
+console.log('answer2 = ' + answer2);
+console.log('answer3 = ' + answer3);
