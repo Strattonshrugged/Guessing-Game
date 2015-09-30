@@ -4,47 +4,40 @@ var answer2;
 var answer3;
 
 var answer1 = prompt("Do I like chocolate?");
-alert("You said: " + answer1);
-console.log('answer1 exact input: ' + answer1);
-console.log('answer1 Upper Case: ' + answer1.toUpperCase());
+	alert("You said: " + answer1);
+		console.log('answer1 exact input: ' + answer1);
+		console.log('answer1 Upper Case: ' + answer1.toUpperCase());
 
-
-if (answer1.toUpperCase() === 'YES')	{
+if (answer1.toUpperCase() === 'YES' || 'Y')	{
 	alert("Congratulations, that's correct!");
 	answersRight++;
 }	else	{
 	alert("Sorry, either you weren't clear or you have never seen me eat chocolate.");
 }
 
+var answer2 = prompt("Do I like dogs?");
+	alert("You said: " + answer2);
+		console.log('answer2 exact input: ' + answer2);
+		console.log('answer2 Upper Case: ' + answer2.toUpperCase());
+
+if (answer2.toUpperCase() === 'YES' || 'Y')	{
+	alert("Right! Dogs are awesome! And cats are ... tolerable.");
+	answersRight++;
+}	else	{
+	alert("Are you kidding? I love dogs!");
+}
+
+var answer3 = prompt("Do I enjoy biking?");
+	alert("You said: " + answer3);
+		console.log('answer3 exact input: ' + answer3);
+		console.log('answer3 Upper Case: ' + answer3.toUpperCase());
+
+if (answer3.toUpperCase() === 'NO' || 'N')	{
+	alert("No! The last bike I rode was stationary and I still crashed it!");
+	answersRight++;
+}	else	{
+	alert("Very good, why carry my body weight on my scrotum when I can enjoy a quick stroll.");
+}
 
 document.write(answersRight);
-// so I can check to see if that variable is changing correctly
-
-
-/*	class demo
-if (question1.toUpperCase === 'YES')	{
-	alert('Lucky you');
-}	else	{
-	alert('Sucks to be you');
-}
-*/
-
-
-
-
-// Just cutting down to one question right now
-/*
-var question2 = prompt('Do I like dogs?');
-console.log('Question 2 response: ' + question2);
-alert('Your answer to question 2 was ' + question2);
-
-
-var question3 = prompt('Do I like biking?');
-console.log('Question 3 response: ' + question3);
-alert('Your answer to question 3 was ' + question3);
-
-alert('So to summarize I like chocolate and dogs but hate biking');
-*/
-
-
 
