@@ -3,10 +3,8 @@ var answersRight = 0;
 var answer1 = document.getElementById('first');
 var answer2 = document.getElementById('second');
 var answer3 = document.getElementById('third');
+var ending = document.getElementById('ending');
 
-question1();
-question2();
-question3();
 
 function question1() {
 	var answer1 = prompt("Do I like chocolate?");
@@ -50,7 +48,12 @@ function question3() {
 	}	
 }
 
+function summary(answersRight) {
+	ending.innerHTML = "You scored " + answersRight + " out of 3. Thank you for playing!";
+}
 
-
-alert("You scored " + answersRight + " out of 3. Thank you for playing!");
+question1();
+question2();
+question3();
+summary(answersRight);
 
