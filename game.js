@@ -8,6 +8,10 @@ var ending = document.getElementById('ending');
 var question = ["Do I like chocolate?", "Do I like dogs?", "Do I enjoy biking?"];
 var answer = ['YES', 'Y', 'NO', 'N'];
 
+var imageOne = document.getElementById('chocolate');
+var imageTwo = document.getElementById('dog');
+var imageThree = document.getElementById('bike');
+
 function question1() {
 	var answer1 = prompt(question[0]);
 		//alert("You said: " + answer1);
@@ -16,6 +20,7 @@ function question1() {
 
 	if ((answer1.toUpperCase() === answer[0]) || (answer1.toUpperCase() === answer[1]))	{
 		first.innerHTML = "Congratulations, that's correct!";
+		imageOne.className = 'correct';
 		answersRight++;
 	}	else	{
 		first.innerHTML = "Sorry, either you weren't clear or you have never seen me eat chocolate.";
@@ -30,6 +35,7 @@ function question2() {
 
 	if ((answer2.toUpperCase() === answer[0]) || (answer2.toUpperCase() === answer[1]))	{
 		second.innerHTML = "Right! Dogs are awesome! And cats are ... tolerable.";
+		imageTwo.className = 'correct';
 		answersRight++;
 	}	else	{
 		second.innerHTML = "Are you kidding? I love dogs!";
@@ -44,6 +50,7 @@ function question3() {
 
 	if ((answer3.toUpperCase() === answer[2]) || (answer3.toUpperCase() === answer[3]))	{
 		third.innerHTML = "Correct! The last bike I rode was stationary and I still crashed it!";
+		imageThree.className = 'correct';
 		answersRight++;
 	}	else	{
 		third.innerHTML = "Sorry, I hate biking.";
