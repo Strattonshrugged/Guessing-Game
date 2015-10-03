@@ -70,5 +70,5 @@ function summary(answersRight) {
 question1();
 window.setTimeout(question2, 1000);
 window.setTimeout(question3, 1000);
-window.setTimeout(summary(answersRight), 2000);
+window.setTimeout(summary(answersRight), 4000);
 
